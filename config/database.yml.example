@@ -9,9 +9,9 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: shopmunki_web_v0.1_development
+  database: shopmunki_development
   pool: 5
-  username: root
+  username: shopmunki
   password:
   socket: /tmp/mysql.sock
 
@@ -22,21 +22,21 @@ test: &test
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: shopmunki_web_v0.1_test
+  database: shopmunki_test
   pool: 5
-  username: root
+  username: shopmunki
   password:
   socket: /tmp/mysql.sock
 
-production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: shopmunki_web_v0.1_production
-  pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+#production:
+  #adapter: mysql2
+  #encoding: utf8
+  #reconnect: false
+  #database: shopmunki_production
+  #pool: 5
+  #username: shopmunki
+  #password:
+  #socket: /tmp/mysql.sock
 
 cucumber:
   <<: *test

@@ -1,4 +1,8 @@
+## default gitignore settings
 .bundle
 db/*.sqlite3
 log/*.log
 tmp/
+
+## custom gitignore settings
+config/database.yml
